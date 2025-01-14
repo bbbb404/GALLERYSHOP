@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nanum_n';
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTF00.eot');
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTF00.eot?#iefix') format('embedded-opentype'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTF00.woff2') format('woff2'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nanum_bold';
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTFBold00.eot');
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTFBold00.eot?#iefix') format('embedded-opentype'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTFBold00.woff2') format('woff2'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTFBold00.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nanum_EX';
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTFExtraBold00.eot');
+    src: url('font/nanum-myeongjo/NanumMyeongjoOTFExtraBold00.eot?#iefix') format('embedded-opentype'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTFExtraBold00.woff2') format('woff2'),
+        url('font/nanum-myeongjo/NanumMyeongjoOTFExtraBold00.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Regular.eot');
+    src: url('font/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    color: #333;
+}
+
+/* common */
+section .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    margin: 180px auto 0;
+}
+section .inner .title{
+    margin-bottom: 70px;
+    text-align: center;
+}
+section .inner .title h1{
+    font-family: 'nanum_EX';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section .inner .title p{
+    font-family: 'nanum_bold';
+    font-size: 20px;
+}
+
+/* 본문 */
+.main_visual{
+    position: relative;
+}
+.main_visual .image{
+    width: 100%;
+}
+.main_visual .image img{
+    width: 100%;
+    object-fit: cover;
+}
+.main_visual .text{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-family: 'nanum_bold';
+    color: #f5f5f5;
+}
+.main_visual .text p{
+    font-size: 24px;
+}
+.main_visual .text h1{
+    font-size: 40px;
+}
+
+.section01 .item_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.section01 .item_wrap .text{
+    margin-top: 30px;
+}
+.section01 .item_wrap .text p{
+    font-family: 'nanum_n';
+    color: #c9ab81;
+}
+.section01 .item_wrap .text h3{
+    font-size: 24px;
+    margin: 20px 0 45px;
+    font-family: 'nanum_EX';
+}
+.section01 .item_wrap .text h2{
+    font-size: 32px;
+    font-family: 'nanum_EX';
+}
+
+.section02{
+    background-color: #f5f5f5;
+}
+.section02 .inner{
+    padding: 180px 0;
+    height: 100%;
+}
+.section02 .inner .item_wrap{
+    display: flex;
+    justify-content:space-between;
+}
+.section02 .inner .item_wrap .image{
+    width: 720px;
+    height: 478px;
+}
+.section02 .inner .item_wrap .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section02 .inner .item_wrap .text{
+    width: 720px;
+    background-color: #fff;
+    align-content: center;
+    padding: 0 70px;
+}
+.section02 .inner .item_wrap .text .m_t{
+    font-family: 'nanum_bold';
+    color: #c9ab81;
+}
+.section02 .inner .item_wrap .text h2{
+    font-size: 36px;
+    font-family: 'nanum_EX';
+    margin: 20px 0 40px;
+}
+.section02 .inner .item_wrap .text p{
+    font-family: 'pre';
+}
+
+
+.section03{
+    height: 807px;
+    text-align: center;
+    align-content: center;
+    background: url('../img/Layer6.jpg') center center / cover no-repeat;
+    background-attachment: fixed; 
+}
+.section03 .text{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 507px;
+    background-color: #ffffffb3;
+    margin: 0 auto;
+    align-content: center;
+}
+.section03 .text h1{
+    font-size: 50px;
+    font-family: 'nanum_EX';
+}
+.section03 .text p{
+    font-size: 20px;
+    font-family: 'nanum_bold';
+}
+.section03 .text .link{
+    display: block;
+    background-color: #e0d1c2;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 80px auto 0;
+    font-family: 'nanum_EX';
+}
+
+
+
+@media screen and (max-width: 960px){
+    .main_visual .image img{
+        height: 100vh;
+    }
+    .main_visual .text p{
+        font-size: 20px;
+    }
+    .main_visual .text h1{
+        font-size: 35px;
+    }
+    .section03 .text{
+        height: 400px;
+    }
+    .section03 .text h1{
+        font-size: 40px;
+    }
+    .section03 .text .link{
+        width: 150px;
+        font-size: 16px;
+    }
+}
+
